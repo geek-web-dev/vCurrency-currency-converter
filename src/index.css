@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #f97316;
+
+    --surface-p: #fff;
+    --surface-s: #eee;
+    --surface-t: #ddd;
+    --surface-q: #ccc;
+
+    --text-p: #000;
+    --text-s: #444;
+    --text-t: #777;
+    --text-q: #999;
+
+    --sidebar-p: #fff;
+    --sidebar-s: #f5f5f5;
+
+    --border-p: #ccc;
+    --border-s: #ddd;
+  }
+
+  .dark {
+    --surface-p: #111;
+    --surface-s: #222;
+    --surface-t: #333;
+    --surface-q: #444;
+
+    --text-p: #fff;
+    --text-s: #ddd;
+    --text-t: #999;
+    --text-q: #777;
+
+    --sidebar-p: #000;
+    --sidebar-s: #111;
+
+    --border-p: #555;
+    --border-s: #333;
+  }
+}
+
+body {
+  background-color: var(--surface-p);
+}
+
+p {
+  color: var(--text-t);
+}
